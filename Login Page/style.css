@@ -1,0 +1,202 @@
+:root{
+    --primaryColor:#0c54a3;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin: 0;
+    width: 100vw;
+}
+
+.headerbar{
+    width: 100%;
+    height: 12.5vh;
+    display: flex;
+    align-items: center;
+    padding: 1%;
+}
+
+.headerbar img{
+    height: 100%;
+}
+
+.navbar{
+    width: 100%;
+    height: 10vh;
+    background-color:var(--primaryColor);
+}
+
+.navbar ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.navbar ul li{
+    color: white;
+    margin: 0 1.5%;
+}
+
+.mainbody{
+    width: 100%;
+    display: flex;
+}
+
+.leftside{
+    width: 25%;
+    height: 77.5vh;
+    
+}
+
+.loginCard{
+    margin: 5%;
+    width: 90%;
+    height: 72.5%;
+    border: 1px solid gray;
+}
+
+.loginCard .cardHead{
+    background-color: var(--primaryColor);
+    height: 15%;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.cardHead h3{
+    font-weight: 100;
+}
+
+.loginCard .description{
+    margin: 5%;
+    font-size: 0.9rem;
+}
+
+.loginCard .inputbox{
+    padding: 0 5%;
+    width: 100%;
+    height: 16.5%;
+}
+
+.inputbox p{
+    margin: 1%;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.inputbox input{
+    width: 100%;
+    height: 50%;
+    border: 1.5px solid lightgray;
+}
+
+.submission{
+    padding: 0 5%;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+.submission button{
+    height: 50%;
+    background-color: var(--primaryColor);
+    border: 0;
+    color: white;
+}
+
+.submission button:nth-of-type(1){
+    width: 40%;
+}
+.submission button:nth-of-type(2){
+    width: 55%;
+}
+
+.rightside{
+    width: 75%;
+    min-height: 77.5vh;
+    margin: 2%;
+}
+
+.rightside .noticeboard{
+    border: 1px solid gray;
+    width: 100%;
+    height: 125%;
+    padding: 1%;
+    background-color: whitesmoke;
+}
+
+.noticeboard ul{
+    width: 100%;
+    height: 10%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 1%;
+}
+
+.noticeboard ul li{
+    background-color: var(--primaryColor);
+    padding: 1%;
+    margin: 0 0.5%;
+    color: white;
+    border-radius: 5px 5px 0 0 ;
+}
+
+.noticeboard hr{
+    border: 1px solid var(--primaryColor);
+}
+
+.noticeboard .noticearea{
+    width: 100%;
+    height: 90%;
+    background-color: var(--primaryColor);
+    /* opacity: 0.8; */
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-auto-rows: auto;
+    padding-top: 5%;
+}
+
+.noticearea .notice{
+    width: 80%;
+    height: 80%;
+    background-color: blue;
+    margin: 0 auto ;
+    padding: 0 2%;
+    box-shadow: 7px 7px 20px rgb(39, 39, 39);
+    
+}
+
+.notice h3{
+    margin: 5% 2%;
+}
+
+.notice p {
+    margin: 2% 0;
+}
+
+.notice:nth-of-type(odd){
+    background-color: wheat;
+    transform: rotate(-5deg);
+}
+.notice:nth-of-type(even){
+    background-color: lightgreen;
+    transform: rotate(5deg);
+}
+
+.notice:nth-of-type(odd):hover,.notice:nth-of-type(even):hover{
+    transform: rotate(0deg);
+    box-shadow: 7px 7px 20px black ;
+}
